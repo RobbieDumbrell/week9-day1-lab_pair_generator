@@ -1,6 +1,7 @@
 package models;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Cohort {
@@ -64,6 +65,46 @@ public class Cohort {
         this.students.add(student18);
         this.students.add(student19);
         this.students.add(student20);
+    }
+
+    public Student selectRandomStudent(){
+        Collections.shuffle(this.students);
+        return this.students.get(0);
+    }
+
+    public ArrayList<Student> selectRandomPair(){
+        ArrayList<Student> randomPair = new ArrayList<Student>();
+
+        Student firstStudent = selectRandomStudent();
+        randomPair.add(firstStudent);
+
+        Student secondStudent = selectRandomStudent();
+        while (secondStudent == firstStudent){
+            secondStudent = selectRandomStudent();
+        }
+
+        randomPair.add(secondStudent);
+
+        return randomPair;
+    }
+
+    public ArrayList<Student> selectRandomGroup(int groupSize){
+        ArrayList<Student> randomGroup = new ArrayList<Student>();
+
+        if (groupSize > 20){
+            return null;
+        }
+
+        for (int i = 0; i < groupSize ; i++) {
+            Student nextStudent = selectRandomStudent();
+            while (randomGroup.contains(nextStudent)){
+                nextStudent = selectRandomStudent();
+            }
+            randomGroup.add(nextStudent);
+        }
+
+        return randomGroup;
+
     }
 
 
