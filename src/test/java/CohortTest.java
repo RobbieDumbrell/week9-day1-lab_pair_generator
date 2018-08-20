@@ -73,4 +73,10 @@ public class CohortTest {
         ArrayList<ArrayList<Student>> allGroups = e23.generateRandomGroups(3);
         assertEquals(6, allGroups.size());
     }
+
+    @Test
+    public void canGenerateAllGroupsWithLeftovers_b(){
+        ArrayList<ArrayList<Student>> allGroups = e23.generateRandomGroups(7);
+        assertEquals(2, allGroups.size());
+    }
 }

@@ -134,6 +134,13 @@ public class Cohort {
             }
             randomGroups.add(nextGroup);
         }
+
+        if (leftovers <= randomGroups.size()) {
+            for (int i = 0; i < leftovers ; i++) {
+                randomGroups.get(i).add(this.students.get(19 - i));
+            }
+        }
+
         return randomGroups;
     }
 
