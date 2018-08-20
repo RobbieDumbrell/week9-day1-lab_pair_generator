@@ -1,0 +1,7 @@
+#foreach ($pair in $randomPairs)
+    <ul>
+        #foreach ($student in $pair)
+        <li>$student.getName()</li>
+        #end
+    </ul>
+#end

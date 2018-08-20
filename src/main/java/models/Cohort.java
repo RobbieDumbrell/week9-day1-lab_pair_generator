@@ -43,7 +43,7 @@ public class Cohort {
         Student student17 = new Student("Ricardo");
         Student student18 = new Student("Stoo");
         Student student19 = new Student("Vicky");
-        Student student20 = new Student("Donald Trump");
+        Student student20 = new Student("The Queen");
 
         this.students.add(student1);
         this.students.add(student2);
@@ -102,6 +102,21 @@ public class Cohort {
         return randomGroup;
     }
 
+    public ArrayList<ArrayList<Student>> generateRandomPairs(){
+        ArrayList<ArrayList<Student>> randomPairs = new ArrayList<>();
+
+        Collections.shuffle(this.students);
+
+        for (int i = 0; i < 20 ; i+= 2) {
+            ArrayList<Student> nextPair = new ArrayList<Student>();
+            Student firstStudent = this.students.get(i);
+            Student secondStudent = this.students.get(i+1);
+            nextPair.add(firstStudent);
+            nextPair.add(secondStudent);
+            randomPairs.add(nextPair);
+        }
+        return randomPairs;
+    }
 
 
 }

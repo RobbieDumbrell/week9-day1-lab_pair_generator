@@ -1,1 +1,6 @@
-<p>$randomPair.get(0).getName() and $randomPair.get(1).getName()</p>
+<ul>
+    #foreach ($student in $randomPair)
+    <li>$student.getName()</li>
+    #end
+</ul>
+

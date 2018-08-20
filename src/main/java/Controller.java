@@ -42,6 +42,18 @@ public class Controller {
 
         }, velocityTemplateEngine);
 
+        get("/pairs", (req, res) -> {
+
+            ArrayList<ArrayList<Student>> randomPairs = e23.generateRandomPairs();
+
+            HashMap<String, Object> model = new HashMap<>();
+            model.put("randomPairs", randomPairs);
+            model.put("template", "randomPairs.vtl");
+
+            return new ModelAndView(model, "layout.vtl");
+
+        }, velocityTemplateEngine);
+
 
         get("/group/:size", (req, res) -> {
 

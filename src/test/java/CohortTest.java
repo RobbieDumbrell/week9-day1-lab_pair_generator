@@ -55,4 +55,10 @@ public class CohortTest {
         assertEquals(0, groupOfZero.size());
         assertEquals(null, groupOfTwentyOne);
     }
+
+    @Test
+    public void canGenerateAllPairs(){
+        ArrayList<ArrayList<Student>> allPairs = e23.generateRandomPairs();
+        assertEquals(10, allPairs.size());
+    }
 }
