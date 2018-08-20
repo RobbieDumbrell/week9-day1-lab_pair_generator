@@ -61,4 +61,10 @@ public class CohortTest {
         ArrayList<ArrayList<Student>> allPairs = e23.generateRandomPairs();
         assertEquals(10, allPairs.size());
     }
+
+//    @Test
+//    public void canGenerateAllGroupsDivideInto20(){
+//        ArrayList<ArrayList<Student>> allGroups = e23.generateRandomGroups(5);
+//        assertEquals(4, allGroups.size());
+//    }
 }

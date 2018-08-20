@@ -7,7 +7,7 @@ import java.util.List;
 public class Cohort {
 
     private String name;
-    private List<Student> students;
+    private ArrayList<Student> students;
 
     public Cohort(String cohort) {
         this.name = cohort;
@@ -117,6 +117,20 @@ public class Cohort {
         }
         return randomPairs;
     }
+
+//    public ArrayList<ArrayList<Student>> generateRandomGroups(int groupSize){
+//        ArrayList<ArrayList<Student>> randomGroups = new ArrayList<>();
+//
+//        Collections.shuffle(this.students);
+//
+//        for (int i = 0; i < groupSize ; i++) {
+//            ArrayList<Student> randomGroup = new ArrayList<Student>();
+//            Student nextStudent = this.students.get(i);
+//            randomGroup.add(nextStudent);
+//        }
+//
+//        return randomGroups;
+//    }
 
 
 }
