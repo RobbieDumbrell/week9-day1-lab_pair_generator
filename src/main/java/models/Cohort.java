@@ -23,7 +23,7 @@ public class Cohort {
         return students;
     }
 
-    public void populateStudents(){
+    public void populateStudents() {
         Student student1 = new Student("Robbie");
         Student student2 = new Student("Emil");
         Student student3 = new Student("Gaz");
@@ -67,12 +67,12 @@ public class Cohort {
         this.students.add(student20);
     }
 
-    public Student selectRandomStudent(){
+    public Student selectRandomStudent() {
         Collections.shuffle(this.students);
         return this.students.get(0);
     }
 
-    public ArrayList<Student> selectRandomPair(){
+    public ArrayList<Student> selectRandomPair() {
         ArrayList<Student> randomPair = new ArrayList<Student>();
 
         Collections.shuffle(this.students);
@@ -85,16 +85,16 @@ public class Cohort {
         return randomPair;
     }
 
-    public ArrayList<Student> selectRandomGroup(int groupSize){
+    public ArrayList<Student> selectRandomGroup(int groupSize) {
         ArrayList<Student> randomGroup = new ArrayList<Student>();
 
-        if (groupSize > 20){
+        if (groupSize > 20) {
             return null;
         }
 
         Collections.shuffle(this.students);
 
-        for (int i = 0; i < groupSize ; i++) {
+        for (int i = 0; i < groupSize; i++) {
             Student nextStudent = this.students.get(i);
             randomGroup.add(nextStudent);
         }
@@ -102,15 +102,15 @@ public class Cohort {
         return randomGroup;
     }
 
-    public ArrayList<ArrayList<Student>> generateRandomPairs(){
+    public ArrayList<ArrayList<Student>> generateRandomPairs() {
         ArrayList<ArrayList<Student>> randomPairs = new ArrayList<>();
 
         Collections.shuffle(this.students);
 
-        for (int i = 0; i < 20 ; i+= 2) {
+        for (int i = 0; i < 20; i += 2) {
             ArrayList<Student> nextPair = new ArrayList<Student>();
             Student firstStudent = this.students.get(i);
-            Student secondStudent = this.students.get(i+1);
+            Student secondStudent = this.students.get(i + 1);
             nextPair.add(firstStudent);
             nextPair.add(secondStudent);
             randomPairs.add(nextPair);
@@ -118,19 +118,24 @@ public class Cohort {
         return randomPairs;
     }
 
-//    public ArrayList<ArrayList<Student>> generateRandomGroups(int groupSize){
-//        ArrayList<ArrayList<Student>> randomGroups = new ArrayList<>();
-//
-//        Collections.shuffle(this.students);
-//
-//        for (int i = 0; i < groupSize ; i++) {
-//            ArrayList<Student> randomGroup = new ArrayList<Student>();
-//            Student nextStudent = this.students.get(i);
-//            randomGroup.add(nextStudent);
-//        }
-//
-//        return randomGroups;
-//    }
+    public ArrayList<ArrayList<Student>> generateRandomGroups(int groupSize) {
+        ArrayList<ArrayList<Student>> randomGroups = new ArrayList<>();
+
+        Collections.shuffle(this.students);
+
+        int leftovers = (20 % groupSize);
+        int amountToLoop = 20 - leftovers;
+
+        for (int i = 0; i < amountToLoop; i += groupSize) {
+            ArrayList<Student> nextGroup = new ArrayList<>();
+            for (int j = 0; j < groupSize; j++) {
+                Student nextStudent = this.students.get(i + j);
+                nextGroup.add(nextStudent);
+            }
+            randomGroups.add(nextGroup);
+        }
+        return randomGroups;
+    }
 
 
 }

@@ -69,6 +69,21 @@ public class Controller {
 
         }, velocityTemplateEngine);
 
+
+        get("/groups/:size", (req, res) -> {
+
+            Integer groupSize = Integer.parseInt(req.params(":size"));
+
+            ArrayList<ArrayList<Student>> randomGroups = e23.generateRandomGroups(groupSize);
+
+            HashMap<String, Object> model = new HashMap<>();
+            model.put("randomGroups", randomGroups);
+            model.put("template", "randomGroups.vtl");
+
+            return new ModelAndView(model, "layout.vtl");
+
+        }, velocityTemplateEngine);
+
     }
 
 }

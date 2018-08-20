@@ -1,0 +1,7 @@
+#foreach ($group in $randomGroups)
+<ul>
+    #foreach ($student in $group)
+    <li>$student.getName()</li>
+    #end
+</ul>
+#end

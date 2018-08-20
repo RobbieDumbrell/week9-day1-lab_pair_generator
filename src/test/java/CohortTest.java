@@ -62,9 +62,15 @@ public class CohortTest {
         assertEquals(10, allPairs.size());
     }
 
-//    @Test
-//    public void canGenerateAllGroupsDivideInto20(){
-//        ArrayList<ArrayList<Student>> allGroups = e23.generateRandomGroups(5);
-//        assertEquals(4, allGroups.size());
-//    }
+    @Test
+    public void canGenerateAllGroupsDivideInto20(){
+        ArrayList<ArrayList<Student>> allGroups = e23.generateRandomGroups(4);
+        assertEquals(5, allGroups.size());
+    }
+
+    @Test
+    public void canGenerateAllGroupsWithLeftovers(){
+        ArrayList<ArrayList<Student>> allGroups = e23.generateRandomGroups(3);
+        assertEquals(6, allGroups.size());
+    }
 }
