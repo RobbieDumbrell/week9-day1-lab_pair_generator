@@ -75,14 +75,11 @@ public class Cohort {
     public ArrayList<Student> selectRandomPair(){
         ArrayList<Student> randomPair = new ArrayList<Student>();
 
-        Student firstStudent = selectRandomStudent();
+        Collections.shuffle(this.students);
+        Student firstStudent = this.students.get(0);
+        Student secondStudent = this.students.get(1);
+
         randomPair.add(firstStudent);
-
-        Student secondStudent = selectRandomStudent();
-        while (secondStudent == firstStudent){
-            secondStudent = selectRandomStudent();
-        }
-
         randomPair.add(secondStudent);
 
         return randomPair;
@@ -95,16 +92,14 @@ public class Cohort {
             return null;
         }
 
+        Collections.shuffle(this.students);
+
         for (int i = 0; i < groupSize ; i++) {
-            Student nextStudent = selectRandomStudent();
-            while (randomGroup.contains(nextStudent)){
-                nextStudent = selectRandomStudent();
-            }
+            Student nextStudent = this.students.get(i);
             randomGroup.add(nextStudent);
         }
 
         return randomGroup;
-
     }
 
 

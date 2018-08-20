@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51f746eb-81bc-42b5-810f-74204b32c6f6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Cohort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Cohort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CohortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CohortTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/Cohort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Cohort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CohortTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CohortTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,7 +22,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2072" />
+          <entry key="java" value="2317" />
           <entry key="vtl" value="247" />
           <entry key="xml" value="2" />
         </counts>
@@ -36,7 +30,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="247" />
-          <entry key="JAVA" value="2072" />
+          <entry key="JAVA" value="2317" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -68,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/randomGroup.vtl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+            <state relative-caret-position="60">
+              <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -114,11 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Cohort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="98" column="56" lean-forward="true" selection-start-line="98" selection-start-column="56" selection-end-line="98" selection-end-column="56" />
+            <state relative-caret-position="314">
+              <caret line="102" column="5" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#341#342#0" expanded="true" />
@@ -170,10 +164,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/layout.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/randomStudent.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/randomPair.vtl" />
-        <option value="$PROJECT_DIR$/src/main/java/models/Cohort.java" />
         <option value="$PROJECT_DIR$/src/test/java/CohortTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/resources/randomGroup.vtl" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Cohort.java" />
       </list>
     </option>
   </component>
@@ -258,7 +252,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534780639776" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534781955885" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -313,9 +307,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CohortTest - 2018.08.20 at 16h 18m 40s.xml">
-      <configuration name="CohortTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CohortTest - 2018.08.20 at 16h 42m 30s.xml">
       <configuration name="CohortTest" configurationId="JUnit" />
     </history-entry>
@@ -341,6 +332,9 @@
       <configuration name="CohortTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CohortTest - 2018.08.20 at 16h 56m 20s.xml">
+      <configuration name="CohortTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CohortTest - 2018.08.20 at 17h 18m 04s.xml">
       <configuration name="CohortTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -399,6 +393,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/randomPair.vtl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/randomStudent.vtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/layout.vtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/randomGroup.vtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="52" column="47" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -429,8 +457,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Cohort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="98" column="56" lean-forward="true" selection-start-line="98" selection-start-column="56" selection-end-line="98" selection-end-column="56" />
+        <state relative-caret-position="314">
+          <caret line="102" column="5" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#341#342#0" expanded="true" />
@@ -440,40 +468,6 @@
             <element signature="e#2483#2492#0" expanded="true" />
             <element signature="e#2964#2973#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/randomPair.vtl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/randomStudent.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/layout.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="52" column="47" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/randomGroup.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
         </state>
       </provider>
     </entry>
