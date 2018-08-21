@@ -138,7 +138,17 @@ public class Cohort {
         if (leftovers <= randomGroups.size()) {
             for (int i = 0; i < leftovers ; i++) {
                 randomGroups.get(i).add(this.students.get(19 - i));
+
             }
+        }
+
+        if (leftovers > randomGroups.size()) {
+            ArrayList<Student> nextGroup = new ArrayList<>();
+            for (int i = 0; i < leftovers ; i++) {
+                Student nextStudent = this.students.get(19 - i);
+                nextGroup.add(nextStudent);
+            }
+            randomGroups.add(nextGroup);
         }
 
         return randomGroups;
